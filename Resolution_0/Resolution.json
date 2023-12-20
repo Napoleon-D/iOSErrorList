@@ -1,0 +1,9 @@
+{
+    "error": "clang: error: SDK does not contain 'libarclite' at the path '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a'; try increasing the minimum deployment target",
+
+    "resolution": "一般是Xcode升级至Xcode15时会报该错误。报错的路径下缺少libarclite_iphonesimulator.a文件。需要新建arc文件夹，并下载该目录下对应的文件放入arc文件夹中，重新运行即可。如果是模拟器则放入libarclite_iphonesimulator.a文件。如果是真机，则放入libarclite_iphoneos.a文件。",
+    
+    "quote": "https://blog.csdn.net/u013712343/article/details/134262640",
+
+    "fileUrl": "https://github.com/kamyarelyasi/Libarclite-Files"
+}
